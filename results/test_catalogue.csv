@@ -1,0 +1,16 @@
+test,question,result (2023 / 2025)
+Welch t (two-sided),Did the commute-zone share change?,p = 0.28 / 0.29
+TOST equivalence (±3 pp),Is any change smaller than 3 pp?,p = 0.0003 / 0.0017
+F-test of variances; Levene,Are pre/post spreads equal? (choice of Welch),F p = 0.001 / 0.002; Levene p = 0.20 / 0.57
+Mann–Whitney U (two-sided),Same answer without assuming normality?,p = 0.08 / 0.71
+χ² on days (2×2) + Fisher,More 'high-share' days after the rise?,p = 0.15 / 0.93
+χ² on rentals (2×2),Why the rental is the wrong unit,"p < 0.001, Cramér's V = 0.0045"
+"Regression F, partial F","Do rain, rest days, curvature add to temperature?","F = 307, F = 341, F = 92, F = 94"
+ANCOVA F (day of week),P1: more rides on rest days?,"F = 13.8, p < 0.001; rest days -25,726"
+"One-way ANOVA F, χ² (zone × hour)",P2: park stations less commute-heavy?,F p = 0.005 / 3e-07; V = 0.013
+Interaction F (cluster-robust),P3: commuting-hour rides less weather-sensitive?,"F = 0.15, p = 0.86"
+DiD + two-way ANOVA F,Did C change more than L on the same days?,+0.22 pp (p = 0.43) / -0.19 pp (p = 0.51)
+Station fixed-effects DiD,"Same, each station against itself",+0.71 pp (p = 0.09) / -0.57 pp (p = 0.14)
+Permutation placebo,Is C's change unusual for any 140 stations?,p = 0.76 / 0.24
+"Gap-slope test, Chow F",Parallel trends; did the share–temperature relation break?,slope p = 0.65 / 0.20; Chow p = 0.18 / 0.56
+Power (80 %),Could we have seen a 3 pp effect?,smallest detectable 1.8 / 2.1 pp
